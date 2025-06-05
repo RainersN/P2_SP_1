@@ -159,8 +159,8 @@ function displayQuestion() {
   quizContainer.appendChild(optionsElement);
   imageElement.src = questionData.image;
   imageElement.alt = 'Question Image';
-  imageElement.width = 200; // 👈 NEW
-  imageElement.height = 200; // 👈 NEW (or whatever works for your aspect ratio)
+  imageElement.width = 200;
+  imageElement.height = 200;
   imageElement.style.maxWidth = '100%';
   imageElement.style.display = 'block';
   imageElement.style.margin = '10px 0';
