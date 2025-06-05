@@ -66,6 +66,24 @@ const resultContainer = document.getElementById('result');
 const submitButton = document.getElementById('submit');
 const retryButton = document.getElementById('retry');
 const timerDisplay = document.getElementById('timer');
+const imageElement = document.createElement('img');
+imageElement.src = questionData.image;
+imageElement.alt = 'Question Image';
+imageElement.width = 300; // 👈 NEW
+imageElement.height = 200; // 👈 NEW (or whatever works for your aspect ratio)
+imageElement.style.maxWidth = '100%';
+imageElement.style.display = 'block';
+imageElement.style.margin = '10px 0';
+const imageWrapper = document.createElement('div');
+imageWrapper.style.width = '300px';
+imageWrapper.style.height = '200px'; // Matches image size
+imageWrapper.style.overflow = 'hidden';
+imageWrapper.style.display = 'flex';
+imageWrapper.style.alignItems = 'center';
+imageWrapper.style.justifyContent = 'center';
+
+imageWrapper.appendChild(imageElement);
+quizContainer.appendChild(imageWrapper);
 
 let currentQuestion = 0;
 let score = 0;
