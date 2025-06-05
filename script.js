@@ -67,13 +67,6 @@ const submitButton = document.getElementById('submit');
 const retryButton = document.getElementById('retry');
 const timerDisplay = document.getElementById('timer');
 const imageElement = document.createElement('img');
-imageElement.src = questionData.image;
-imageElement.alt = 'Question Image';
-imageElement.width = 300; // 👈 NEW
-imageElement.height = 200; // 👈 NEW (or whatever works for your aspect ratio)
-imageElement.style.maxWidth = '100%';
-imageElement.style.display = 'block';
-imageElement.style.margin = '10px 0';
 const imageWrapper = document.createElement('div');
 imageWrapper.style.width = '300px';
 imageWrapper.style.height = '200px'; // Matches image size
@@ -132,7 +125,7 @@ function displayQuestion() {
   questionElement.innerHTML = questionData.question;
 
   const imageElement = document.createElement('img');
-  imageElement.src = questionData.image;
+  imageElement.src = quizData.image;
   imageElement.alt = 'Question Image';
   imageElement.style.maxWidth = '300px';
   imageElement.style.display = 'block';
@@ -164,6 +157,13 @@ function displayQuestion() {
   quizContainer.appendChild(questionElement);
   quizContainer.appendChild(imageElement);
   quizContainer.appendChild(optionsElement);
+  imageElement.src = questionData.image;
+  imageElement.alt = 'Question Image';
+  imageElement.width = 200; // 👈 NEW
+  imageElement.height = 200; // 👈 NEW (or whatever works for your aspect ratio)
+  imageElement.style.maxWidth = '100%';
+  imageElement.style.display = 'block';
+  imageElement.style.margin = '10px 0';
 }
 
 // Atbildes pārbaude
