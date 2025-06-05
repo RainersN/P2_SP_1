@@ -1,0 +1,64 @@
+body {
+  background-color:#D3D3D3;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1{
+	font-family: 'Ubuntu', times-new-roman;
+	position: relative;
+	text-align: center;
+	font-size: 100px;
+	color: green;
+}
+button{
+  background-color: rgb(76,175,80,0.85); 
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transform: scale(2);
+}
+button:hover {
+  transform: scale(2.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+header {
+  background-color: Green;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  font-size: 32px;
+}
+footer {
+  background-color: Black;
+  color: white;
+  text-align: center;
+  padding: 3px 0;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+}
+.item1 {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-style: solid;
+  border-radius: 8px;
+  border: 5px solid Green;
+  font-size: 24px;
+}
