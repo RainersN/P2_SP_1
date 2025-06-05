@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: Green;
+  background-color: green;
   display: flex;
   justify-content: center;
 }
@@ -51,14 +51,21 @@ h1 {
   background-color: #3071a9;
 }
 
-.result {
-  text-align: center;
-  margin-top: 20px;
-  font-weight: bold;
+.result,
+#quiz {
+  min-height: 100px; /* Adjust as needed */
 }
 
-.hide{
-  display: none;
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: auto;
 }
 @font-face {
   font-family: 'Poppins';
