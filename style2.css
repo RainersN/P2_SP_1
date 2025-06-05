@@ -60,3 +60,8 @@ h1 {
 .hide{
   display: none;
 }
+@font-face {
+  font-family: 'Poppins';
+  src: url('https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJnecmNE.woff2') format('woff2');
+  font-display: swap;
+}
